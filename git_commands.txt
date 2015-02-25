@@ -1,0 +1,5 @@
+git clone https://username:password@github.com/douglaskastle/django-request.git
+cd django-request
+git remote add upstream https://github.com/kylef/django-request
+git fetch upstream
+git merge upstream/master 
