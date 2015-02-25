@@ -18,7 +18,7 @@ class patterns(object):
         self.unknown = unknown
 
         for pattern in args:
-            if pattern.__class__ == str:
+            if pattern.__class__ == str or pattern.__class__ == unicode:
                 self.patterns.append(RegexPattern(pattern))
             else:
                 self.patterns.append(RegexPattern(*pattern))
